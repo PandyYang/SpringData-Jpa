@@ -11,6 +11,12 @@ import javax.persistence.*;
 @Table(name = "customer")
 public class Customer {
 
+    /**
+     * 主键生成策略
+     * identity:主键自增
+     * auto:自动生成
+     * table:
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cust_id")
